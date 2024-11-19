@@ -1,0 +1,116 @@
+.posts {
+   display: flex;
+   margin-top: 128px;
+   margin-bottom: 128px;
+   gap: 32px;
+}
+
+/* левый блог - выделенный пост */
+
+.featured-post {
+   max-width: 733px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 44px;
+}
+ 
+
+.featured-post__card {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   border: 1px solid rgba(110, 118, 100, 0.1);
+   padding: 32px;
+}
+
+.featured-post__card-content { /*!!!*/
+   display: flex;
+   flex-direction: column;
+   gap: 43px;
+}
+ 
+.featured-post__image {
+   width: 669px;
+   height: auto;
+}
+ 
+.featured-post__meta {
+   display: flex;
+   flex-direction: column;
+   gap: 27px;
+}
+ 
+
+
+.post__author {
+   color: var(--color-purple);
+}
+
+
+/* Правый блок - список всех постов */
+
+.posts-list {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 44px;
+   flex: 1;
+ }
+ 
+.posts-list__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+ 
+ 
+.posts-list__view-all {
+   color: var(--color-purple);
+   text-decoration: none;
+}
+ 
+.posts-list__items {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+}
+ 
+.posts-list__item {
+   padding: 37px;
+}
+ 
+
+.post-list__item--highlighted {
+   background-color: var(--color--highlightened);
+}
+ 
+ 
+.post-preview__headline {
+   margin: 21px 0;
+}
+ 
+
+@media (--xl-viewport) {
+   .posts {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .featured-post__card {
+      align-items: center;
+   }
+
+   .featured-post__title {
+      text-align: center;
+   }
+
+   .posts-list__header {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+   }   
+
+
+}

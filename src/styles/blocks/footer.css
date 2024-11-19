@@ -1,0 +1,34 @@
+.footer {
+   background-color: var(--color-black);
+}
+
+.footer__header {
+   height: auto;
+   padding: 0;
+}
+
+.footer__container {
+   position: relative;
+   padding: 59px 0;
+}
+
+.footer__subscription-form {
+   margin-top: 55px;
+}
+
+.footer__contact__container {
+   margin-top: 48px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer__contact {
+   color: rgba(255, 255, 255, 0.7);
+   font-style: normal;
+}
+
+.footer_socials img {
+   width: 16px;
+   height: 16px;
+}

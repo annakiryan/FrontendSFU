@@ -1,0 +1,24 @@
+.card--full {
+   display: flex;
+   align-items: center;
+   gap: 36px;
+}
+
+.card__tagline {
+   color: var(--color-purple);
+}
+
+.card__title {
+   margin-top: 20px;
+}
+
+.card__description {
+   margin-top: 16px;
+}
+
+@media (--md-viewport) {
+   .card--full {
+      flex-direction: column;
+      
+   }
+}

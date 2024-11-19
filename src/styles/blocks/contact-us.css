@@ -1,0 +1,48 @@
+.contact-us {
+   margin-top: 208px;
+   margin-bottom: 208px;
+}
+
+.contact-us__heading__wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+.contact-us__heading {
+   max-width: 768px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.contact-us__heading * {
+   text-align: center;
+}
+
+.contact-us__title {
+   margin-top: 12px;
+}
+
+.contact-us__description {
+   margin-top: 24px;
+}
+
+.contact-us__contact-card__wrapper {
+   margin-top: 64px;
+   display: flex;
+   justify-content: center;
+}
+
+.contact-us__form__wrapper {
+   margin-top: 32px;
+   display: flex;
+   justify-content: center;
+}
+
+@media (--lg-viewport) {
+   .contact-us {
+      margin-top: 140px;
+      margin-bottom: 140px;
+   }
+}

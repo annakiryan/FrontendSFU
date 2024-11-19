@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light;
+
+  --color-heading: var(--color-black);
+  --color-body: var(--color-medium-grey);
+  --color-body-special: var(--color-black);
+  --color--highlightened: var(--color-light-yellow);
+  --color-bg: var(--color-white);
+}
+
+html {
+  background-color: var(--color-bg);
+}

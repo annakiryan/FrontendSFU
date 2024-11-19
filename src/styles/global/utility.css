@@ -1,0 +1,40 @@
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.container {
+  width: 90%;
+  /* padding-left: 16px;
+  padding-right: 16px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* @media (--xl-viewport) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (--lg-viewport) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (--md-viewport) {
+  .container {
+    max-width: 576px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (--sm-viewport) {
+  .container {
+    max-width: 100%;
+  }
+} */

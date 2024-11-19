@@ -1,0 +1,13 @@
+:root {
+  color-scheme: dark;
+
+  --color-heading: var(--color-white);
+  --color-body: var(--color-white);
+  --color-body-special: var(--color-white);
+  --color--highlightened: var(--color-black);
+  --color-bg: #2E3040;
+}
+
+html {
+  background-color: var(--color-bg);
+}

@@ -1,0 +1,29 @@
+@import 'colors/colors.css';
+@import 'fonts/fonts.css';
+@import 'global/variables.css';
+@import 'global/media.css';
+@import 'global/normalize.css';
+@import 'global/utility.css';
+@import 'blocks/header.css';
+@import 'blocks/cover.css';
+@import 'blocks/button.css';
+@import 'blocks/navigation.css';
+@import 'blocks/posts.css';
+@import 'blocks/company-overview.css';
+@import 'blocks/categories.css';
+@import 'blocks/special-post.css';
+@import 'blocks/socials.css';
+@import 'blocks/authors.css';
+@import 'blocks/logos.css';
+@import 'blocks/testimonials.css';
+@import 'blocks/invitation.css';
+@import 'blocks/footer.css';
+@import 'blocks/form.css';
+@import 'blocks/blog-posts.css';
+@import 'blocks/card.css';
+@import 'blocks/contact-form.css';
+@import 'blocks/contact-us.css';
+@import 'blocks/contact-card.css';
+
+
+
