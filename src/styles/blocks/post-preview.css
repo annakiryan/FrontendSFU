@@ -10,6 +10,10 @@
   padding: 21px 0;
 }
 
+.post-preview__author {
+  color: var(--color-purple);
+}
+
 @media (--md-viewport) {
   .post-preview {
     padding: 20px;
