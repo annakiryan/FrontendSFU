@@ -1,19 +1,16 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .container {
-  width: 90%;
-  /* padding-left: 16px;
-  padding-right: 16px; */
+  max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* @media (--xl-viewport) {
+@media (--xl-viewport) {
   .container {
     max-width: 1024px;
   }
@@ -37,4 +34,4 @@ body {
   .container {
     max-width: 100%;
   }
-} */
+}
