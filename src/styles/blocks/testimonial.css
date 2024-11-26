@@ -1,0 +1,18 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 121px;
+  height: 100%;
+}
+
+.testimonial__text {
+  color: var(--color-black);
+}
+
+@media (width <= 530px) {
+  .testimonial {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}

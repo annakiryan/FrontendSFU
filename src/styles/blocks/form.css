@@ -1,69 +1,69 @@
 .subscription-form {
-   width: 100%;
-   background-color: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  background-color: rgb(255 255 255 / 5%);
 }
 
-.subscription-form__container {
-   padding: 80px 64px;
-   display: flex;
-   justify-content: space-between;
+.subscription-form-wrapper {
+  padding: 80px 64px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .subscription-form__title {
-   display: block;
-   max-width: 562px;
-   color: var(--color-white);
+  display: block;
+  max-width: 562px;
+  color: var(--color-white);
 }
 
 .subscription-form__input-group {
-   display: flex;
-   align-items: center;
-   max-width: 526px;
-   gap: 24px;
+  display: flex;
+  align-items: center;
+  max-width: 526px;
+  gap: 24px;
 }
 
 .subscription-form__input {
-   width: 60%;
-   height: 56px;
-   padding: 0 25px;
-   color: var(--color-medium-grey);
-   border: 1px solid var(--color-dark-grey);
-   outline: none;
-   background-color: transparent;
+  width: 60%;
+  height: 56px;
+  padding: 0 25px;
+  color: var(--color-medium-grey);
+  border: 1px solid var(--color-dark-grey);
+  outline: none;
+  background-color: transparent;
 }
 
 @media (--xl-viewport) {
-   .subscription-form__container {
-      padding: 80px 64px;
-      flex-direction: column;
-      gap: 25px;
-      align-items: center;
-   }
+  .subscription-form-wrapper {
+    padding: 80px 64px;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
 
-   .subscription-form__title {
-      text-align: center;
-   }
+  .subscription-form__title {
+    text-align: center;
+  }
 
-   .subscription-form__input-group {
-      max-width: 450px;
-   }
+  .subscription-form__input-group {
+    max-width: 450px;
+  }
 }
 
 @media (--sm-viewport) {
-   .subscription-form__input-group {
-      flex-direction: column;
-      gap: 16px;
-   }
+  .subscription-form__input-group {
+    flex-direction: column;
+    gap: 16px;
+  }
 
-   .subscription-form__input {
-      width: 100%;
-   }
+  .subscription-form__input {
+    width: 100%;
+  }
 
-   .subscription-form__button {
-      width: 100%;
-   }
+  .subscription-form__button {
+    width: 100%;
+  }
 
-   .footer__header {
-      display: none;
-   }
+  .footer__header {
+    display: none;
+  }
 }

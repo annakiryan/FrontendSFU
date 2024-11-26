@@ -1,0 +1,21 @@
+.post-preview {
+  padding: 37px;
+}
+
+.post-preview--highlighted {
+  background-color: var(--color-highlightened);
+}
+
+.post-preview__headline {
+  padding: 21px 0;
+}
+
+@media (--md-viewport) {
+  .post-preview {
+    padding: 20px;
+  }
+
+  .post-preview__headline {
+    padding: 12px 0;
+  }
+}

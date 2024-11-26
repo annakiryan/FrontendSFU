@@ -1,0 +1,39 @@
+.page__contact-us {
+  margin-top: 128px;
+}
+
+.page__posts,
+.page__company-overview,
+.page__categories,
+.page__special-post,
+.page__authors,
+.page__logos,
+.page__testimonials {
+  margin-top: 128px;
+}
+
+.page__categories--blog {
+  margin-top: 64px;
+}
+
+.page__invitation,
+.page__footer {
+  margin-top: 90px;
+}
+
+.page__blog-posts {
+  margin-top: 80px;
+}
+
+@media (--md-viewport) {
+  .page__posts,
+  .page__company-overview,
+  .page__categories,
+  .page__special-post,
+  .page__authors,
+  .page__logos,
+  .page__testimonials,
+  .page__invitation {
+    margin-top: 60px;
+  }
+}

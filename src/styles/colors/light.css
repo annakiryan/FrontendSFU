@@ -4,7 +4,7 @@
   --color-heading: var(--color-black);
   --color-body: var(--color-medium-grey);
   --color-body-special: var(--color-black);
-  --color--highlightened: var(--color-light-yellow);
+  --color-highlightened: var(--color-light-yellow);
   --color-bg: var(--color-white);
 }
 

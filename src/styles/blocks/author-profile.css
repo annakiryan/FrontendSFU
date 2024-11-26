@@ -1,0 +1,19 @@
+.author-profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.author-profile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-profile__name {
+  font-style: normal;
+  color: var(--color-black);
+}
+
+.author-profile__location {
+  color: var(--color-medium-grey);
+}

@@ -22,59 +22,63 @@
   <body class="page">
     <header class="page__header header">
       <div class="header__container container">
-        <div class="header__logo">
-          <img src="images/Logo.svg" alt="Company Logo">
+        <div class="navbar header__navbar">
+          <div class="navbar__left">
+            <img src="images/Logo.svg" class="header__logo" alt="Company Logo">
+          </div>
+          <nav class="navbar__right">
+            <div class="hamburger-wrapper">
+              <button class="navbar__hamburger hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <ul class="navbar__menu menu body-01">
+              <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+              <li class="menu__item menu__item--has-submenu">
+                <a href="about.html" class="menu__link">About Us</a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item"><a href="team.html" class="submenu__link">Our Team</a></li>
+                  <li class="submenu__item"><a href="mission.html" class="submenu__link">Our Mission</a></li>
+                  <li class="submenu__item"><a href="history.html" class="submenu__link">Company History</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a href="contact.html" class="menu__link">Contact Us</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="hamburger_wrapper">
-          <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
+    </header>
+  
+    <header class="cover">
+        <div class="cover__container container">
+          <div class="cover__content">
+            <p class="cover__tagline cap-01">POSTED ON <strong>STARTUP</strong></p>
+            <h1 class="cover__title heading-display">Step-by-step guide to choosing great font pairs</h1>
+            <header class="cover__meta body-01">
+              <span class="cover__author">By <span class="cover__author-name">James West</span></span>
+              <span class="cover__date">| May 23, 2022</span>
+            </header>
+            <p class="cover__description body-01">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <a href="#" class="button cover__button">Read More ></a>
+          </div>
         </div>
-        <nav class="header__nav">
-          <ul class="header__menu body-01">
-            <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
-            <li class="header__item"><a href="blog.html" class="header__link">Blog</a></li>
-            <li class="header__item header__item--has-submenu">
-              <a href="about.html" class="header__link">About Us</a>
-              <ul class="header__submenu">
-                <li class="header__submenu-item"><a href="team.html" class="header__submenu-link">Our Team</a></li>
-                <li class="header__submenu-item"><a href="mission.html" class="header__submenu-link">Our Mission</a></li>
-                <li class="header__submenu-item"><a href="history.html" class="header__submenu-link">Company History</a></li>
-              </ul>
-            </li>
-            <li class="header__item"><a href="contact.html" class="header__link">Contact Us</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
-    <header class="cover cover--home">
-      <div class="cover__content container">
-        <p class="cover__tagline cap-01">POSTED ON <strong>STARTUP</strong></p>
-        <h1 class="cover__title heading-display">Step-by-step guide to choosing great font pairs</h1>
-        <header class="cover__meta body-01">
-          <span class="cover__author">By <span class="cover__author-name">James West</span></span>
-          <span class="cover__date">| May 23, 2022</span>
-        </header>
-        <p class="cover__description body-01">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident.
-        </p>
-        <a href="#" class="button cover__button">Read More ></a>
-      </div>
-    </header>
-
-    <section class="posts container">
-      <section class="posts__featured-post featured-post">
-        <h2 class="featured-post__title heading-h2">Featured Post</h2>
-        <article class="featured-post__card">
-          <div class="featured-post__card__content">
-            <img src="images/featured-post__image.svg" alt="featured image" class="featured-post__image"/>
-            <div class="featured-post__meta">
-              <header class="featured-post__author-date post__author-date label">
-                By <span class="featured-post__author post__author">John Doe</span> | May 23, 2022
+    <section class="posts page__posts container">
+      <section class="posts__post-wrapper">
+        <h2 class="posts__title heading-h2">Featured Post</h2>
+        <article class="posts__post post">
+          <div class="post__content">
+            <img src="images/featured-post__image.svg" alt="featured image" class="post__image"/>
+            <div class="post__meta">
+              <header class="post__author-date label">
+                By <span class="post__author">John Doe</span> | May 23, 2022
               </header>
               <h3 class="post__headline heading-h3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -84,53 +88,45 @@
               </p>
             </div>
           </div>
-          <a href="#" class="button featured-post__button">Read More ></a>
+          <a href="#" class="button post__button">Read More ></a>
         </article>
       </section>
 
-      <section class="posts__posts-list posts-list">
-        <div class="posts-list__header">
-          <h2 class="posts-list__title heading-h2">All Posts</h2>
-          <a href="#" class="posts-list__view-all body-01">View All</a>
+      <section class="posts__list-wrapper">
+        <div class="posts__header">
+          <h2 class="posts__title heading-h2">All Posts</h2>
+          <a href="#" class="posts__view-all body-01">View All</a>
         </div>
-        <ul class="posts-list__items">
-          <li class="posts-list__item">
-            <article class="post-preview">
-              <header class="post-preview__author-date post__author-date label">
-                By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
-              </header>
-              <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
-            </article>
-          </li>
-          <li class="posts-list__item post-list__item--highlighted">
-            <article class="post-preview">
-              <header class="post-preview__author-date post__author-date label">
-                By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
-              </header>
-              <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
-            </article>
-          </li>
-          <li class="posts-list__item">
-            <article class="post-preview">
-              <header class="post-preview__author-date post__author-date label">
-                By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
-              </header>
-              <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
-            </article>
-          </li>
-          <li class="posts-list__item">
-            <article class="post-preview">
-              <header class="post-preview__author-date post__author-date label">
-                By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
-              </header>
-              <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
-            </article>
-          </li>
+        <ul class="posts__list">
+          <article class="post-preview">
+            <header class="post-preview__author-date post__author-date label">
+              By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
+            </header>
+            <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
+          </article>
+          <article class="post-preview post-preview--highlighted">
+            <header class="post-preview__author-date post__author-date label">
+              By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
+            </header>
+            <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
+          </article>
+          <article class="post-preview">
+            <header class="post-preview__author-date post__author-date label">
+              By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
+            </header>
+            <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
+          </article>
+          <article class="post-preview">
+            <header class="post-preview__author-date post__author-date label">
+              By <span class="post-preview__author post__author">John Doe</span> | Aug 23, 2021
+            </header>
+            <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
+          </article>
         </ul>
       </section>
     </section>
 
-    <section class="company-overview container">
+    <section class="company-overview page__company-overview container">
       <div class="company-overview__content">
         <section class="company-overview__card company-overview__card--about">
           <header class="company-overview__title cap-01">ABOUT US</header>
@@ -156,218 +152,206 @@
       </div>
     </section>
 
-    <section class="categories categories--home container">
-      <div class="categories__title__wrapper">
+    <section class="categories categories--home page__categories container">
+      <div class="categories__title-wrapper">
         <h2 class="categories__title heading-h2">Choose a catagory</h2>
       </div>
       <ul class="categories__list">
-        <li class="categories__list__item">
-          <article class="categories__catagory">
-            <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_business.svg" alt=""></footer>
-            <h3 class="categories__catagory__title heading-h3">Business</h3>
-            <p class="categories__catagory__description body-01">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </p>
-          </article>
-        </li>
-        <li class="categories__list__item categories__list__item--highlighted">
-          <article class="categories__catagory">
-            <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_startup.svg" alt=""></footer>
-            <h3 class="categories__catagory__title heading-h3">Startup</h3>
-            <p class="categories__catagory__description body-01">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </p>
-          </article>
-        </li>
-        <li class="categories__list__item">
-          <article class="categories__catagory">
-            <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_economy.svg" alt=""></footer>
-            <h3 class="categories__catagory__title heading-h3">Economy</h3>
-            <p class="categories__catagory__description body-01">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </p>
-          </article>
-        </li>
-        <li class="categories__list__item">
-          <article class="categories__catagory">
-            <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_technology.svg" alt=""></footer>
-            <h3 class="categories__catagory__title heading-h3">Technology</h3>
-            <p class="categories__catagory__description body-01">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            </p>
-          </article>
-        </li>
+        <article class="categories__catagory catagory">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_business.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Business</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
+        <article class="categories__catagory catagory catagory--highlighted">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_startup.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Startup</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
+        <article class="categories__catagory catagory">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_economy.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Economy</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
+        <article class="categories__catagory catagory">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_technology.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Technology</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
       </ul>
     </section>
 
 
-    <section class="special-post container">
+    <section class="special-post page__special-post container">
       <img class="special-post__image" src="images/special-post__image.svg" alt="A photo of friends sitting on the beach">
       <section class="special-post__content">
-        <div class="special-post__content__wrapper">
-          <header class="special-post__content__title cap-01">WHY WE STARTED</header>
-          <h1 class="special-post__content__vision heading-h1">
+        <div class="special-post__content-wrapper">
+          <header class="special-post__title cap-01">WHY WE STARTED</header>
+          <h1 class="special-post__vision heading-h1">
             It started out as a simple idea and evolved into our passion
           </h1>
-          <p class="special-post__content__description body-01">
+          <p class="special-post__description body-01">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip.
           </p>
-          <a href="#" class="special-post__content__button button">Discover our story ></a>
+          <a href="#" class="special-post__button button">Discover our story ></a>
         </div>
       </section>
     </section>
 
-    <section class="authors container">
-      <div class="authors__title__wrapper">
+    <section class="authors page__authors container">
+      <div class="authors__title-wrapper">
         <h2 class="authors__title heading-h2">List of authors</h2>
       </div>
       <ul class="authors__list">
-        <li class="authors__list__item">
-          <article class="authors__author">
-            <img class="authors__author__image" src="images/author__image1.svg" alt="">
-            <h3 class="authors__author__name heading-h3">Floyd Miles</h3>
-            <p class="authors__author__role body-02">Content Writer @Company</p>
-            <div class="socials authors__author_socials">
-              <a href="#"><img src="images/icon_facebook.svg" alt=""></a>
-              <a href="#"><img src="images/icon_twitter.svg" alt=""></a>
-              <a href="#"><img src="images/icon_instagram.svg" alt=""></a>
-              <a href="#"><img src="images/icon_in.svg" alt=""></a>
-            </div>
-          </article>
-        </li>
-        <li class="authors__list__item authors__list__item--highlightened">
-          <article class="authors__author">
-            <img class="authors__author__image" src="images/author__image2.svg" alt="">
-            <h3 class="authors__author__name heading-h3">Dianne Russell</h3>
-            <p class="authors__author__role body-02">Content Writer @Company</p>
-            <div class="socials authors__author_socials">
-              <a href="#"><img src="images/icon_facebook.svg" alt=""></a>
-              <a href="#"><img src="images/icon_twitter.svg" alt=""></a>
-              <a href="#"><img src="images/icon_instagram.svg" alt=""></a>
-              <a href="#"><img src="images/icon_in.svg" alt=""></a>
-            </div>
-          </article>
-        </li>
-        <li class="authors__list__item">
-          <article class="authors__author">
-            <img class="authors__author__image" src="images/author__image3.svg" alt="">
-            <h3 class="authors__author__name heading-h3">Jenny Wilson</h3>
-            <p class="authors__author__role body-02">Content Writer @Company</p>
-            <div class="socials authors__author_socials">
-              <a href="#"><img src="images/icon_facebook.svg" alt=""></a>
-              <a href="#"><img src="images/icon_twitter.svg" alt=""></a>
-              <a href="#"><img src="images/icon_instagram.svg" alt=""></a>
-              <a href="#"><img src="images/icon_in.svg" alt=""></a>
-            </div>
-          </article>
-        </li>
-        <li class="authors__list__item">
-          <article class="authors__author">
-            <img class="authors__author__image" src="images/author__image4.svg" alt="">
-            <h3 class="authors__author__name heading-h3">Leslie Alexander</h3>
-            <p class="authors__author__role body-02">Content Writer @Company</p>
-            <div class="socials authors__author_socials">
-              <a href="#"><img src="images/icon_facebook.svg" alt=""></a>
-              <a href="#"><img src="images/icon_twitter.svg" alt=""></a>
-              <a href="#"><img src="images/icon_instagram.svg" alt=""></a>
-              <a href="#"><img src="images/icon_in.svg" alt=""></a>
-            </div>
-          </article>
-        </li>
+        <article class="authors__author author">
+          <img class="author__image" src="images/author__image1.svg" alt="">
+          <h3 class="author__name heading-h3">Floyd Miles</h3>
+          <p class="author__role body-02">Content Writer @Company</p>
+          <div class="socials author_socials">
+            <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_in.svg" alt=""></a>
+          </div>
+        </article>
+        <article class="authors__author author author--highlighted">
+          <img class="author__image" src="images/author__image2.svg" alt="">
+          <h3 class="author__name heading-h3">Dianne Russell</h3>
+          <p class="author__role body-02">Content Writer @Company</p>
+          <div class="socials author_socials">
+            <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_in.svg" alt=""></a>
+          </div>
+        </article>
+        <article class="authors__author author">
+          <img class="author__image" src="images/author__image3.svg" alt="">
+          <h3 class="author__name heading-h3">Jenny Wilson</h3>
+          <p class="author__role body-02">Content Writer @Company</p>
+          <div class="socials author_socials">
+            <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_in.svg" alt=""></a>
+          </div>
+        </article>
+        <article class="authors__author author">
+          <img class="author__image" src="images/author__image4.svg" alt="">
+          <h3 class="author__name heading-h3">Leslie Alexander</h3>
+          <p class="author__role body-02">Content Writer @Company</p>
+          <div class="socials author_socials">
+            <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_in.svg" alt=""></a>
+          </div>
+        </article>
       </ul>
     </section>
 
-    <section class="logos container">
+    <section class="logos page__logos container">
       <div class="logos__intro">
         <div class="logos__intro--small body-02">We are</div>
         <div class="logos__intro--large heading-h4">Featured in</div>
       </div>
-      <ul class="logos__logos-list logos-list">
-        <li class="logos-list__item">
+      <ul class="logos__list">
+        <li class="logos__item">
           <img src="images/logo1.svg" alt="Logo">
         </li>
-        <li class="logos-list__item">
+        <li class="logos__item">
           <img src="images/logo2.svg" alt="Logo">
         </li>
-        <li class="logos-list__item">
+        <li class="logos__item">
           <img src="images/logo3.svg" alt="Logo">
         </li>
-        <li class="logos-list__item">
+        <li class="logos__item">
           <img src="images/logo4.svg" alt="Logo">
         </li>
-        <li class="logos-list__item">
+        <li class="logos__item">
           <img src="images/logo5.svg" alt="Logo">
         </li>
       </ul>
     </section>
 
-    <section class="testimonials container">
-      <div class="testimonials__container">
-        <div class="testimonials__header">
-          <header class="testimonials__subtitle cap-01">TESTIMONIALS</header>
-          <h2 class="testimonials__title heading-h2">What people say about our blog</h2>
-          <p class="testimonials__description body-01">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-          </p>
-        </div>
-        
-        <div class="testimonials__content">
-            <blockquote class="testimonial">
-                <h4 class="testimonial__text heading-h4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </h4>
-                <footer class="testimonial__footer">
-                    <img src="images/profile-picture.svg" alt="Jonathan Vallem" class="testimonial__avatar">
-                    <div class="testimonial__author-info">
-                        <cite class="testimonial__author heading-h4">Jonathan Vallem</cite>
-                        <p class="testimonial__location body-01">New York, USA</p>
-                    </div>
-                </footer>
-            </blockquote>
-            <div class="testimonials__navigation navigation">
-                <button class="navigation__button navigation__button--prev"><img class="navigation__button__arrow" src="images/arrow--prev.svg" alt=""></button>
-                <button class="navigation__button navigation__button--next"><img class="navigation__button__arrow" src="images/arrow--next.svg" alt=""></button>
-            </div>
-        </div>
-    </div>
+    <section class="testimonials page__testimonials container">
+      <div class="testimonials__header">
+        <header class="testimonials__subtitle cap-01">TESTIMONIALS</header>
+        <h2 class="testimonials__title heading-h2">What people say about our blog</h2>
+        <p class="testimonials__description body-01">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        </p>
+      </div>
+      
+      <div class="testimonials__content">
+          <blockquote class="testimonials__testimonial testimonial">
+              <h4 class="testimonial__text heading-h4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </h4>
+              <footer class="testimonial__author-profile author-profile">
+                  <img src="images/profile-picture.svg" alt="Jonathan Vallem" class="author-profile__avatar">
+                  <div class="author-profile__info">
+                      <cite class="author-profile__name heading-h4">Jonathan Vallem</cite>
+                      <p class="author-profile__location body-01">New York, USA</p>
+                  </div>
+              </footer>
+          </blockquote>
+          <div class="testimonials__navigation navigation">
+              <button class="navigation__button navigation__button--prev"><img class="navigation__button__arrow" src="images/arrow--prev.svg" alt=""></button>
+              <button class="navigation__button navigation__button--next"><img class="navigation__button__arrow" src="images/arrow--next.svg" alt=""></button>
+          </div>
+      </div>
     </section>
 
-    <div class="invitation__container container">
-      <section class="invitation">
+    <section class="invitation page__invitation container">
+      <div class="invitation-wrapper">
         <h2 class="invitation__title heading-h2">Join our team to be a part of our story</h2>
         <p class="invitation__description body-01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
         <a class="button invitation__button" href="#">Join now</a>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <footer class="footer">
+    <footer class="footer page__footer">
       <div class="footer__container container">
-        <header class="footer__header header">
-          <div class="header__logo">
-            <img src="images/Logo.svg" alt="Company Logo">
+        <div class="navbar footer__navbar">
+          <div class="navbar__left">
+            <img src="images/Logo.svg" class="header__logo" alt="Company Logo">
           </div>
-          <nav class="header__nav">
-            <ul class="header__menu body-01">
-              <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
-              <li class="header__item"><a href="blog.html" class="header__link">Blog</a></li>
-              <li class="header__item header__item--has-submenu">
-                <a href="about.html" class="header__link">About Us</a>
-                <ul class="header__submenu">
-                  <li class="header__submenu-item"><a href="team.html" class="header__submenu-link">Our Team</a></li>
-                  <li class="header__submenu-item"><a href="mission.html" class="header__submenu-link">Our Mission</a></li>
-                  <li class="header__submenu-item"><a href="history.html" class="header__submenu-link">Company History</a></li>
+          <nav class="navbar__right">
+            <div class="hamburger-wrapper">
+              <button class="navbar__hamburger hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <ul class="navbar__menu menu body-01">
+              <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+              <li class="menu__item menu__item--has-submenu">
+                <a href="about.html" class="menu__link">About Us</a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item"><a href="team.html" class="submenu__link">Our Team</a></li>
+                  <li class="submenu__item"><a href="mission.html" class="submenu__link">Our Mission</a></li>
+                  <li class="submenu__item"><a href="history.html" class="submenu__link">Company History</a></li>
                 </ul>
               </li>
-              <li class="header__item"><a href="contact.html" class="header__link">Contact Us</a></li>
-              <li class="header__item"><a href="contact.html" class="header__link">Privacy policy</a></li>
+              <li class="menu__item"><a href="contact.html" class="menu__link">Contact Us</a></li>
             </ul>
           </nav>
-        </header>
+        </div>
   
         <form action="#" class="footer__subscription-form subscription-form">
-          <div class="subscription-form__container">
+          <div class="subscription-form-wrapper">
             <h2 class="subscription-form__title heading-h2">Subscribe to our newsletter to get latest updates and news</h2>
             <div class="subscription-form__input-group">
               <input type="email" class="subscription-form__input" placeholder="Enter Your Email" required>
@@ -376,17 +360,17 @@
           </div>
         </form>
 
-        <div class="footer__contact__container">
-          <address class="footer__contact body-01">
-            <p class="footer__contact-info">Finstreet 118 2561 Fintown</p>
-            <p class="footer__contact-info">Hello@finsweet.com 020 7993 2905</p>
+        <div class="footer__contact">
+          <address class="footer__address body-01">
+            <p class="footer__address-info">Finstreet 118 2561 Fintown</p>
+            <p class="footer__address-info">Hello@finsweet.com 020 7993 2905</p>
           </address>
   
-          <div class="socials footer_socials">
-            <a href="#"><img src="images/icon_facebook_dark.svg" alt=""></a>
-            <a href="#"><img src="images/icon_twitter_dark.svg" alt=""></a>
-            <a href="#"><img src="images/icon_instagram_dark.svg" alt=""></a>
-            <a href="#"><img src="images/icon_in_dark.svg" alt=""></a>
+          <div class="socials footer__socials">
+            <a href="#"><img class="socials__icon" src="images/icon_facebook_dark.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_twitter_dark.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_instagram_dark.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_in_dark.svg" alt=""></a>
           </div>
         </div>
 

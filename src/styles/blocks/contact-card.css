@@ -1,76 +1,74 @@
 .contact-card {
-   width: 768px;
-   background-color: var(--color-purple);
+  width: 768px;
+  background-color: var(--color-purple);
 }
 
 .contact-card__content {
-   padding: 48px 64px;
-   display: flex;
-   gap: 26px;
+  padding: 48px 64px;
+  display: flex;
+  gap: 26px;
 }
 
 .contact-card__contact {
-   width: 294px;
+  width: 294px;
 }
 
-.contact-card__contact__title,
-.contact-card__contact__description {
-   color: rgba(255, 255, 255, 0.6)
+.contact-card__title,
+.contact-card__description {
+  color: rgb(255 255 255 / 60%);
 }
 
-.contact-card__contact__info {
-   color: var(--color-white);
+.contact-card__info {
+  color: var(--color-white);
 }
 
-.contact-card__contact__title__wrapper {
-   height: 36px;
-   display: flex;
-   justify-content: flex-start;
-   align-items: flex-start;
-   position: relative;
+.contact-card__title-wrapper {
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 16px;
 }
 
-.contact-card__contact__title__wrapper::after {
-   content: '';
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: 1px;
-   background-color: rgba(110, 118, 100, 0.32);;
-}
-
-.contact-card__contact__title__wrapper {
-   margin-bottom: 16px;
+.contact-card__title-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(110 118 100 / 32%);
 }
 
 @media (--xl-viewport) {
-   .contact-card {
-      width: 600px;
-   }
+  .contact-card {
+    width: 600px;
+  }
 }
 
 @media (--lg-viewport) {
-   .contact-card {
-      width: 500px;
-   }
+  .contact-card {
+    width: 500px;
+  }
 }
 
 @media (--md-viewport) {
-   .contact-card {
-      width: 400px;
-   }
+  .contact-card {
+    width: 400px;
+  }
 
-   .contact-card__content {
-      flex-direction: column;
-   }
+  .contact-card__content {
+    flex-direction: column;
+    padding: 30px 40px;
+  }
 
-   .contact-card__contact {
-      width: 90%;
-   }
+  .contact-card__contact {
+    width: 90%;
+  }
 }
 
 @media (--sm-viewport) {
-   .contact-card {
-      width: 300px;
-   }
+  .contact-card {
+    width: 300px;
+  }
 }

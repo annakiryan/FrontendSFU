@@ -1,26 +1,24 @@
-.invitation__container {
-   margin-top: 90px;
-   margin-bottom: 90px;
-   display: flex;
-   justify-content: center;
+.invitation {
+  display: flex;
+  justify-content: center;
 }
 
-.invitation {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.invitation-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .invitation__title {
-   text-align: center;
+  text-align: center;
 }
 
 .invitation__description {
-   text-align: center;
-   margin-top: 16px;
+  text-align: center;
+  margin-top: 16px;
 }
 
 .invitation__button {
-   margin-top: 32px;
+  margin-top: 32px;
 }

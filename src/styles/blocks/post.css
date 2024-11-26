@@ -1,0 +1,34 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid rgb(110 118 100 / 10%);
+  padding: 32px;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.post__image {
+  width: auto;
+  height: auto;
+}
+
+.post__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.post__author {
+  color: var(--color-purple);
+}
+
+@media (--xl-viewport) {
+  .post {
+    align-items: center;
+  }
+}

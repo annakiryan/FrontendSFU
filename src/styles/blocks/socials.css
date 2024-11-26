@@ -1,6 +1,11 @@
 .socials {
-   display: flex;
-   justify-content: center;
-   gap: 16px;
-   user-select: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  user-select: none;
+}
+
+.socials__icon {
+  width: 16px;
+  height: 16px;
 }

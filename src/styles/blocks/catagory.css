@@ -1,0 +1,23 @@
+.catagory {
+  border: 1px solid rgb(110 118 100 / 30%);
+  padding: 31px;
+}
+
+.catagory__icon {
+  background-color: var(--color-light-yellow);
+  border-radius: 12px;
+}
+
+.catagory__title {
+  margin-top: 16px;
+}
+
+.catagory__description {
+  margin-top: 6px;
+  color: var(--color-body);
+}
+
+.catagory--highlighted {
+  background-color: var(--color-yellow);
+  border: none;
+}

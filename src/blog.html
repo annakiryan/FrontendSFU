@@ -22,241 +22,226 @@
   <body>
     <header class="page__header header">
       <div class="header__container container">
-        <div class="header__logo">
-          <img src="images/Logo.svg" alt="Company Logo">
+        <div class="navbar header__navbar">
+          <div class="navbar__left">
+            <img src="images/Logo.svg" class="header__logo" alt="Company Logo">
+          </div>
+          <nav class="navbar__right">
+            <div class="hamburger-wrapper">
+              <button class="navbar__hamburger hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <ul class="navbar__menu menu body-01">
+              <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+              <li class="menu__item menu__item--has-submenu">
+                <a href="about.html" class="menu__link">About Us</a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item"><a href="team.html" class="submenu__link">Our Team</a></li>
+                  <li class="submenu__item"><a href="mission.html" class="submenu__link">Our Mission</a></li>
+                  <li class="submenu__item"><a href="history.html" class="submenu__link">Company History</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a href="contact.html" class="menu__link">Contact Us</a></li>
+              <li class="menu__item"><a href="contact.html" class="menu__button button">Subscribe</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="hamburger_wrapper">
-          <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu body-01">
-            <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
-            <li class="header__item"><a href="blog.html" class="header__link">Blog</a></li>
-            <li class="header__item header__item--has-submenu">
-              <a href="about.html" class="header__link">About Us</a>
-              <ul class="header__submenu">
-                <li class="header__submenu-item"><a href="team.html" class="header__submenu-link">Our Team</a></li>
-                <li class="header__submenu-item"><a href="mission.html" class="header__submenu-link">Our Mission</a></li>
-                <li class="header__submenu-item"><a href="history.html" class="header__submenu-link">Company History</a></li>
-              </ul>
-            </li>
-            <li class="header__item"><a href="contact.html" class="header__link">Contact Us</a></li>
-            <li class="header__item"><a href="contact.html" class="header__button button">Subscribe</a></li>
-          </ul>
-        </nav>
-      </div>
     </header>
 
-   <header class="cover cover--blog">
-      <div class="cover__container container">
-        <div class="cover__content cover__content--blog">
-          <div class="cover__content__wrapper--blog">
-            <p class="cover__tagline cover__tagline--blog cap-03">POSTED ON <strong>STARTUP</strong></p>
-            <h2 class="cover__title cover__title--blog heading-h2">Step-by-step guide to choosing great font pairs</h2>
-            <header class="cover__meta cover__meta--blog label">
-              <span class="cover__author">By <span class="cover__author-name cover__author-name--blog">James West</span></span>
-              <span class="cover__date">| May 23, 2022</span>
-            </header>
-            <p class="cover__description cover__description--blog body-01">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident.
-            </p>
-            <a href="#" class="button cover__button">Read More ></a>
+    <header class="pinned-post">
+        <div class="pinned-post__container container">
+          <div class="pinned-post__content">
+            <p class="pinned-post__tagline cap-03">POSTED ON <strong>STARTUP</strong></p>
+              <h2 class="pinned-post__title heading-h2">Step-by-step guide to choosing great font pairs</h2>
+              <header class="pinned-post__meta label">
+                <span class="pinned-post__author">By <span class="pinned-post__author-name">James West</span></span>
+                <span class="pinned-post__date">| May 23, 2022</span>
+              </header>
+              <p class="pinned-post__description body-01">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident.
+              </p>
+              <a href="#" class="button pinned-post__button">Read More ></a>
+          </div>
+          <div class="pinned-post__image-wrapper">
+            <img class="pinned-post__image" src="images/cover--blog.svg" alt="">
           </div>
         </div>
-        <div class="cover__image-wrapper">
-           <img class="cover__image" src="images/cover--blog.svg" alt="">
-        </div>
-      </div>
-   </header>
+    </header>
 
-   <section class="blog-posts">
-      <div class="blog-post__container container">
-        <header class="blog-posts__title__wrapper"><h1 class="blog-posts__title heading-h1">All posts</h1></header>
-        <section class="blog-posts__content">
-          <ul class="blog-posts-list">
-              <li class="post-list__item--full">
-                <article class="card--full">
-                    <div class="card__image_wrapper"><img src="images/card__image1.svg" alt="Image for the post"></div>
-                    <div class="card__content--full">
-                      <p class="card__tagline cap-01">STARTUP</p>
-                      <h2 class="card__title heading-h2">Design tips for designers that cover everything you need</h2>
-                      <p class="card__description body-01">
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                          Excepteur sint occaecat cupidatat non proident.
-                      </p>
-                    </div>
-                </article>
+    <section class="blog-posts page__blog-posts container">
+      <header class="blog-posts__title-wrapper"><h1 class="blog-posts__title heading-h1">All posts</h1></header>
+      <section class="blog-posts__content">
+        <ul class="blog-posts__list">
+          <article class="card">
+            <div class="card__image_wrapper"><img src="images/card__image1.svg" alt="Image for the post"></div>
+            <div class="card__content">
+              <p class="card__tagline cap-01">STARTUP</p>
+              <h2 class="card__title heading-h2">Design tips for designers that cover everything you need</h2>
+              <p class="card__description body-01">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image_wrapper"><img src="images/card__image2.svg" alt="Image for the post"></div>
+            <div class="card__content">
+              <p class="card__tagline cap-01">BUSINESS</p>
+              <h2 class="card__title heading-h2">How to build rapport with your web design clients</h2>
+              <p class="card__description body-01">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image_wrapper"><img src="images/card__image3.svg" alt="Image for the post"></div>
+            <div class="card__content">
+              <p class="card__tagline cap-01">STARTUP</p>
+              <h2 class="card__title heading-h2">Logo design trends to avoid in 2022</h2>
+              <p class="card__description body-01">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image_wrapper"><img src="images/card__image4.svg" alt="Image for the post"></div>
+            <div class="card__content">
+              <p class="card__tagline cap-01">TECHNOLOGY</p>
+              <h2 class="card__title heading-h2">8 Figma design systems you can download for free today</h2>
+              <p class="card__description body-01">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__image_wrapper"><img src="images/card__image5.svg" alt="Image for the post"></div>
+            <div class="card__content">
+              <p class="card__tagline cap-01">ECONOMY</p>
+              <h2 class="card__title heading-h2">Font sizes in UI design: The complete guide to follow</h2>
+              <p class="card__description body-01">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </article>
+        </ul>
+        <div class="blog-post__navigation-wrapper">
+            <div class="blog-post__navigation navigation">
+              <button class="navigation__button--bold navigation__button navigation__button--prev heading-h4">&lt; Prev</button>
+              <button class="navigation__button--bold navigation__button navigation__button--next heading-h3">Next ></button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="categories categories--blog page__categories container">
+      <div class="categories__title-wrapper">
+        <h2 class="categories__title heading-h2">Choose a catagory</h2>
+      </div>
+      <ul class="categories__list">
+        <article class="categories__catagory catagory">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_business.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Business</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
+        <article class="categories__catagory catagory catagory--highlighted">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_startup.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Startup</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
+        <article class="categories__catagory catagory">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_economy.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Economy</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
+        <article class="categories__catagory catagory">
+          <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_technology.svg" alt=""></footer>
+          <h3 class="catagory__title heading-h3">Technology</h3>
+          <p class="catagory__description body-01">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+        </article>
+      </ul>
+    </section>
+
+    <section class="invitation page__invitation container">
+      <div class="invitation-wrapper">
+        <h2 class="invitation__title heading-h2">Join our team to be a part of our story</h2>
+        <p class="invitation__description body-01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <a class="button invitation__button" href="#">Join now</a>
+      </div>
+    </section>
+
+    <footer class="footer page__footer">
+      <div class="footer__container container">
+        <div class="navbar footer__navbar">
+          <div class="navbar__left">
+            <img src="images/Logo.svg" class="header__logo" alt="Company Logo">
+          </div>
+          <nav class="navbar__right">
+            <div class="hamburger-wrapper">
+              <button class="navbar__hamburger hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <ul class="navbar__menu menu body-01">
+              <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+              <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+              <li class="menu__item menu__item--has-submenu">
+                <a href="about.html" class="menu__link">About Us</a>
+                <ul class="menu__submenu submenu">
+                  <li class="submenu__item"><a href="team.html" class="submenu__link">Our Team</a></li>
+                  <li class="submenu__item"><a href="mission.html" class="submenu__link">Our Mission</a></li>
+                  <li class="submenu__item"><a href="history.html" class="submenu__link">Company History</a></li>
+                </ul>
               </li>
-              <li class="post-list__item--full">
-                <article class="card--full">
-                    <div class="card__image_wrapper"><img src="images/card__image2.svg" alt="Image for the post"></div>
-                    <div class="card__content--full">
-                      <p class="card__tagline cap-01">BUSINESS</p>
-                      <h2 class="card__title heading-h2">How to build rapport with your web design clients</h2>
-                      <p class="card__description body-01">
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                          Excepteur sint occaecat cupidatat non proident.
-                      </p>
-                    </div>
-                </article>
-              </li>
-              <li class="post-list__item--full">
-                <article class="card--full">
-                    <div class="card__image_wrapper"><img src="images/card__image3.svg" alt="Image for the post"></div>
-                    <div class="card__content--full">
-                      <p class="card__tagline cap-01">STARTUP</p>
-                      <h2 class="card__title heading-h2">Logo design trends to avoid in 2022</h2>
-                      <p class="card__description body-01">
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                          Excepteur sint occaecat cupidatat non proident.
-                      </p>
-                    </div>
-                </article>
-              </li>
-              <li class="post-list__item--full">
-                <article class="card--full">
-                    <div class="card__image_wrapper"><img src="images/card__image4.svg" alt="Image for the post"></div>
-                    <div class="card__content--full">
-                      <p class="card__tagline cap-01">TECHNOLOGY</p>
-                      <h2 class="card__title heading-h2">8 Figma design systems you can download for free today</h2>
-                      <p class="card__description body-01">
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                          Excepteur sint occaecat cupidatat non proident.
-                      </p>
-                    </div>
-                </article>
-              </li>
-              <li class="post-list__item--full">
-                <article class="card--full">
-                    <div class="card__image_wrapper"><img src="images/card__image5.svg" alt="Image for the post"></div>
-                    <div class="card__content--full">
-                      <p class="card__tagline cap-01">ECONOMY</p>
-                      <h2 class="card__title heading-h2">Font sizes in UI design: The complete guide to follow</h2>
-                      <p class="card__description body-01">
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                          Excepteur sint occaecat cupidatat non proident.
-                      </p>
-                    </div>
-                </article>
-              </li>
-          </ul>
-          <div class="blog-post__navigation__wrapper">
-              <div class="blog-post__navigation navigation">
-                <button class="blog-post__navigation__button--prev navigation__button navigation__button--prev heading-h4">&lt; Prev</button>
-                <button class="blog-post__navigation__button--next navigation__button navigation__button--next heading-h3">Next ></button>
+              <li class="menu__item"><a href="contact.html" class="menu__link">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <form action="#" class="footer__subscription-form subscription-form">
+          <div class="subscription-form-wrapper">
+            <h2 class="subscription-form__title heading-h2">Subscribe to our newsletter to get latest updates and news</h2>
+            <div class="subscription-form__input-group">
+              <input type="email" class="subscription-form__input" placeholder="Enter Your Email" required>
+              <button type="submit" class="subscription-form__button button">Subscribe</button>
             </div>
           </div>
-        </section>
-      </div>
-   </section>
+        </form>
 
-   <section class="categories categories--blog container">
-    <div class="categories__title__wrapper">
-      <h2 class="categories__title heading-h2">All categories</h2>
-    </div>
-    <ul class="categories__list">
-      <li class="categories__list__item">
-        <article class="categories__catagory">
-          <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_business.svg" alt=""></footer>
-          <h3 class="categories__catagory__title heading-h3">Business</h3>
-          <p class="categories__catagory__description body-01">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
-        </article>
-      </li>
-      <li class="categories__list__item categories__list__item--highlighted">
-        <article class="categories__catagory">
-          <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_startup.svg" alt=""></footer>
-          <h3 class="categories__catagory__title heading-h3">Startup</h3>
-          <p class="categories__catagory__description body-01">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
-        </article>
-      </li>
-      <li class="categories__list__item">
-        <article class="categories__catagory">
-          <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_economy.svg" alt=""></footer>
-          <h3 class="categories__catagory__title heading-h3">Economy</h3>
-          <p class="categories__catagory__description body-01">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
-        </article>
-      </li>
-      <li class="categories__list__item">
-        <article class="categories__catagory">
-          <footer class="categories__catagory__icon__wrapper"><img class="categories__catagory__icon" src="images/Icon_technology.svg" alt=""></footer>
-          <h3 class="categories__catagory__title heading-h3">Technology</h3>
-          <p class="categories__catagory__description body-01">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
-        </article>
-      </li>
-    </ul>
-  </section>
-
-  <div class="invitation__container container">
-    <section class="invitation">
-      <h2 class="invitation__title heading-h2">Join our team to be a part of our story</h2>
-      <p class="invitation__description body-01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-      <a class="button invitation__button" href="#">Join now</a>
-    </section>
-  </div>
-
-   <footer class="footer">
-    <div class="footer__container container">
-      <header class="footer__header header">
-        <div class="header__logo">
-          <img src="images/Logo.svg" alt="Company Logo">
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu body-01">
-            <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
-            <li class="header__item"><a href="blog.html" class="header__link">Blog</a></li>
-            <li class="header__item header__item--has-submenu">
-              <a href="about.html" class="header__link">About Us</a>
-              <ul class="header__submenu">
-                <li class="header__submenu-item"><a href="team.html" class="header__submenu-link">Our Team</a></li>
-                <li class="header__submenu-item"><a href="mission.html" class="header__submenu-link">Our Mission</a></li>
-                <li class="header__submenu-item"><a href="history.html" class="header__submenu-link">Company History</a></li>
-              </ul>
-            </li>
-            <li class="header__item"><a href="contact.html" class="header__link">Contact Us</a></li>
-            <li class="header__item"><a href="contact.html" class="header__link">Privacy policy</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <form action="#" class="footer__subscription-form subscription-form">
-        <div class="subscription-form__container">
-          <h2 class="subscription-form__title heading-h2">Subscribe to our newsletter to get latest updates and news</h2>
-          <div class="subscription-form__input-group">
-            <input type="email" class="subscription-form__input" placeholder="Enter Your Email" required>
-            <button type="submit" class="subscription-form__button button">Subscribe</button>
+        <div class="footer__contact">
+          <address class="footer__address body-01">
+            <p class="footer__address-info">Finstreet 118 2561 Fintown</p>
+            <p class="footer__address-info">Hello@finsweet.com 020 7993 2905</p>
+          </address>
+  
+          <div class="socials footer__socials">
+            <a href="#"><img class="socials__icon" src="images/icon_facebook_dark.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_twitter_dark.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_instagram_dark.svg" alt=""></a>
+            <a href="#"><img class="socials__icon" src="images/icon_in_dark.svg" alt=""></a>
           </div>
         </div>
-      </form>
 
-      <div class="footer__contact__container">
-        <address class="footer__contact body-01">
-          <p class="footer__contact-info">Finstreet 118 2561 Fintown</p>
-          <p class="footer__contact-info">Hello@finsweet.com 020 7993 2905</p>
-        </address>
-
-        <div class="socials footer_socials">
-          <a href="#"><img src="images/icon_facebook_dark.svg" alt=""></a>
-          <a href="#"><img src="images/icon_twitter_dark.svg" alt=""></a>
-          <a href="#"><img src="images/icon_instagram_dark.svg" alt=""></a>
-          <a href="#"><img src="images/icon_in_dark.svg" alt=""></a>
-        </div>
       </div>
-
-    </div>
-  </footer>
+    </footer>
 
    <script type="module" src="main.js"></script>
   </body>

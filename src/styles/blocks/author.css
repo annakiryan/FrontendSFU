@@ -1,0 +1,33 @@
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  background-color: var(--color-light-grey);
+}
+
+.author--highlighted {
+  background-color: var(--color-light-yellow);
+}
+
+.author__image {
+  width: 128px;
+  height: 128px;
+  align-self: center;
+}
+
+.author__name {
+  color: var(--color-black);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.author__role {
+  color: var(--color-medium-grey);
+  text-align: center;
+}
+
+.author_socials {
+  margin-top: 20px;
+}
