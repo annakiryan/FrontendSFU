@@ -5,26 +5,26 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  width: 1280px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (--xl-viewport) {
   .container {
-    max-width: 1024px;
+    width: 1024px;
   }
 }
 
 @media (--lg-viewport) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media (--md-viewport) {
   .container {
-    max-width: 576px;
+    width: 576px;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -32,6 +32,6 @@ body {
 
 @media (--sm-viewport) {
   .container {
-    max-width: 100%;
+    width: 100%;
   }
 }
