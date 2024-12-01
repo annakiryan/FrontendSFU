@@ -36,6 +36,10 @@
   color: var(--color-black);
 }
 
+.testimonials__testimonial {
+  height: 100%;
+}
+
 .testimonials__content {
   grid-column: 7 / 12;
   display: flex;
@@ -82,11 +86,5 @@
 @media (width <= 530px) {
   .testimonials {
     padding: 30px 40px;
-  }
-}
-
-@media (width <= 400px) {
-  .testimonials {
-    height: 710px;
   }
 }

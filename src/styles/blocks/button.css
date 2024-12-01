@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  width: max-content;
+  width: max-content; /* либо везде дублировать, либо оставить здесь */
   padding: 16px 50px;
   background-color: var(--color-yellow);
   color: var(--color-black);

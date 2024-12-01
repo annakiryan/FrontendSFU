@@ -34,6 +34,7 @@
   top: 100%;
   left: 0;
   display: none;
+  width: max-content;
 }
 
 .menu--vertical .menu__link {

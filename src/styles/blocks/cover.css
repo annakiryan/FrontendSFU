@@ -1,6 +1,4 @@
 .cover {
-  width: 100%;
-  height: 720px;
   background-image: radial-gradient(circle, rgb(0 0 0 / 40%), rgb(0 0 0 / 60%)), url('images/cover.svg');
   background-position: center;
   background-size: cover;
@@ -59,47 +57,8 @@
     grid-column: 1 / 7;
   }
 
-  .cover__content.cover__content--blog {
-    align-items: center;
-    max-width: 100%;
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-
-  .cover__content__wrapper--blog {
-    width: 100%;
-    align-items: center;
-  }
-
-  .cover.cover--blog {
-    height: 660px;
-  }
-
   .cover__image {
     width: 355px;
     height: auto;
-  }
-
-  .cover__tagline.cover__tagline--blog,
-  .cover__title.cover__title--blog {
-    text-align: center;
-  }
-
-  .cover__meta.cover__meta--blog {
-    text-align: center;
-  }
-
-  .cover__author-name.cover__author-name--blog {
-    text-align: center;
-  }
-
-  .cover__description.cover__description--blog {
-    text-align: center;
-  }
-}
-
-@media (--md-viewport) {
-  .cover.cover--blog {
-    height: 600px;
   }
 }

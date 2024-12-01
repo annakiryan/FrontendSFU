@@ -51,7 +51,7 @@
         </div>
     </header>
   
-    <header class="cover">
+    <header class="cover page__cover">
         <div class="cover__container container">
           <div class="cover__content">
             <p class="cover__tagline cap-01">POSTED ON <strong>STARTUP</strong></p>
@@ -97,7 +97,7 @@
           <h2 class="posts__title heading-h2">All Posts</h2>
           <a href="#" class="posts__view-all body-01">View All</a>
         </div>
-        <ul class="posts__list">
+        <div class="posts__list">
           <article class="post-preview">
             <header class="post-preview__author-date label">
               By <span class="post-preview__author">John Doe</span> | Aug 23, 2021
@@ -122,13 +122,13 @@
             </header>
             <h4 class="post-preview__headline heading-h4">8 Figma design systems that you can download for free today.</h3>
           </article>
-        </ul>
+        </div>
       </section>
     </section>
 
     <section class="company-overview page__company-overview container">
       <div class="company-overview__content">
-        <section class="company-overview__card company-overview__card--about">
+        <section class="company-overview__card">
           <header class="company-overview__title cap-01">ABOUT US</header>
           <h2 class="company-overview__vision heading-h2">
             We are a community of content writers who share their learnings
@@ -138,7 +138,7 @@
           </p>
           <a href="#" class="company-overview__button button">Read More ></a>
         </section>
-        <section class="company-overview__card company-overview__card--about">
+        <section class="company-overview__card">
           <header class="company-overview__title cap-01">OUR MISSION</header>
           <h2 class="company-overview__vision heading-h3">
             Creating valuable content for creatives all around the world
@@ -156,7 +156,7 @@
       <div class="categories__title-wrapper">
         <h2 class="categories__title heading-h2">Choose a catagory</h2>
       </div>
-      <ul class="categories__list">
+      <div class="categories__list">
         <article class="categories__catagory catagory">
           <footer class="catagory__icon-wrapper"><img class="catagory__icon" src="images/Icon_business.svg" alt=""></footer>
           <h3 class="catagory__title heading-h3">Business</h3>
@@ -185,7 +185,7 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
           </p>
         </article>
-      </ul>
+      </div>
     </section>
 
 
@@ -211,12 +211,12 @@
       <div class="authors__title-wrapper">
         <h2 class="authors__title heading-h2">List of authors</h2>
       </div>
-      <ul class="authors__list">
+      <div class="authors__list">
         <article class="authors__author author">
           <img class="author__image" src="images/author__image1.svg" alt="">
           <h3 class="author__name heading-h3">Floyd Miles</h3>
           <p class="author__role body-02">Content Writer @Company</p>
-          <div class="socials author_socials">
+          <div class="socials author__socials">
             <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
@@ -227,7 +227,7 @@
           <img class="author__image" src="images/author__image2.svg" alt="">
           <h3 class="author__name heading-h3">Dianne Russell</h3>
           <p class="author__role body-02">Content Writer @Company</p>
-          <div class="socials author_socials">
+          <div class="socials author__socials">
             <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
@@ -238,7 +238,7 @@
           <img class="author__image" src="images/author__image3.svg" alt="">
           <h3 class="author__name heading-h3">Jenny Wilson</h3>
           <p class="author__role body-02">Content Writer @Company</p>
-          <div class="socials author_socials">
+          <div class="socials author__socials">
             <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
@@ -249,14 +249,14 @@
           <img class="author__image" src="images/author__image4.svg" alt="">
           <h3 class="author__name heading-h3">Leslie Alexander</h3>
           <p class="author__role body-02">Content Writer @Company</p>
-          <div class="socials author_socials">
+          <div class="socials author__socials">
             <a href="#"><img class="socials__icon" src="images/icon_facebook.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_twitter.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_instagram.svg" alt=""></a>
             <a href="#"><img class="socials__icon" src="images/icon_in.svg" alt=""></a>
           </div>
         </article>
-      </ul>
+      </div>
     </section>
 
     <section class="logos page__logos container">
@@ -264,7 +264,7 @@
         <div class="logos__intro--small body-02">We are</div>
         <div class="logos__intro--large heading-h4">Featured in</div>
       </div>
-      <ul class="logos__list">
+      <div class="logos__list">
         <li class="logos__item">
           <img src="images/logo1.svg" alt="Logo">
         </li>
@@ -280,7 +280,7 @@
         <li class="logos__item">
           <img src="images/logo5.svg" alt="Logo">
         </li>
-      </ul>
+      </div>
     </section>
 
     <section class="testimonials page__testimonials container">
@@ -293,10 +293,10 @@
       </div>
       
       <div class="testimonials__content">
-          <blockquote class="testimonials__testimonial testimonial">
-              <h4 class="testimonial__text heading-h4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h4>
+          <div class="testimonials__testimonial testimonial">
+              <blockquote>
+                  <p class="testimonial__text heading-h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </blockquote>
               <footer class="testimonial__author-profile author-profile">
                   <img src="images/profile-picture.svg" alt="Jonathan Vallem" class="author-profile__avatar">
                   <div class="author-profile__info">
@@ -304,7 +304,7 @@
                       <p class="author-profile__location body-01">New York, USA</p>
                   </div>
               </footer>
-          </blockquote>
+            </div>
           <div class="testimonials__navigation navigation">
               <button class="navigation__button navigation__button--prev"><img class="navigation__button__arrow" src="images/arrow--prev.svg" alt=""></button>
               <button class="navigation__button navigation__button--next"><img class="navigation__button__arrow" src="images/arrow--next.svg" alt=""></button>

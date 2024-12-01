@@ -1,5 +1,4 @@
 .contact-card {
-  width: 768px;
   background-color: var(--color-purple);
 }
 
@@ -40,23 +39,7 @@
   background-color: rgb(110 118 100 / 32%);
 }
 
-@media (--xl-viewport) {
-  .contact-card {
-    width: 600px;
-  }
-}
-
-@media (--lg-viewport) {
-  .contact-card {
-    width: 500px;
-  }
-}
-
 @media (--md-viewport) {
-  .contact-card {
-    width: 400px;
-  }
-
   .contact-card__content {
     flex-direction: column;
     padding: 30px 40px;
@@ -64,11 +47,5 @@
 
   .contact-card__contact {
     width: 90%;
-  }
-}
-
-@media (--sm-viewport) {
-  .contact-card {
-    width: 300px;
   }
 }

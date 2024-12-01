@@ -26,15 +26,40 @@
   justify-content: center;
 }
 
+.contact-us__contact-card {
+  width: 768px;
+}
+
 .contact-us__contact-form-wrapper {
   margin-top: 32px;
   display: flex;
   justify-content: center;
 }
 
+.contact-us__сontact-form {
+  width: 768px;
+}
+
 @media (--lg-viewport) {
-  .contact-us {
-    margin-top: 140px;
-    margin-bottom: 140px;
+  .contact-us__contact-card {
+    width: 500px;
+  }
+}
+
+@media (--xl-viewport) {
+  .contact-us__contact-card {
+    width: 600px;
+  }
+}
+
+@media (--md-viewport) {
+  .contact-us__contact-card {
+    width: 400px;
+  }
+}
+
+@media (--sm-viewport) {
+  .contact-us__contact-card {
+    width: 300px;
   }
 }

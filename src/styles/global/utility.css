@@ -5,7 +5,10 @@ body {
 }
 
 .container {
-  width: 1280px;
+  width: 100%;
+  max-width: 1312px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
 }

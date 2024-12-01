@@ -6,7 +6,6 @@
 
 .posts__post-wrapper {
   grid-column: 1 / 8;
-  height: 100%;
 }
 
 .posts__post,
@@ -16,7 +15,6 @@
 
 .posts__list-wrapper {
   grid-column: 8 / 13;
-  height: 100%;
 }
 
 .posts__header {

@@ -1,8 +1,6 @@
 .submenu {
   background-color: var(--color-light-grey);
   padding: 10px 0;
-  margin: 0;
-  width: max-content;
 }
 
 .submenu__item {

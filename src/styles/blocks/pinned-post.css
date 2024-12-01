@@ -1,5 +1,4 @@
 .pinned-post {
-  height: 520px;
   background-color: var(--color-lavender);
 }
 
@@ -41,10 +40,6 @@
   .pinned-post__image-wrapper {
     grid-column: unset;
     justify-content: center;
-  }
-
-  .pinned-post {
-    height: 660px;
   }
 
   .pinned-post__image {
